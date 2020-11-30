@@ -9,7 +9,7 @@ import Banner from './components/Banner/Banner';
 function App() {
   return (
     <div className="app">
-      {/* <Navbar /> */}
+      <Navbar />
       <Banner fetchUrl={requests.fetchNetflixOriginals}/>
       <Row 
         title="NETFLIX ORIGINALS" 
