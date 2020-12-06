@@ -27,7 +27,6 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
         height: "390",
         width: "100%",
         playerVars: {
-            // https://
             autoplay: 1,
         }
     }
@@ -38,7 +37,7 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
         } else {
             movieTrailer(movie?.name || "")
             .then(url => {
-                // https://www.youtube.com/watch?v=XtMThy8QKqU
+                // https://www.youtube.com/watch?v=XtMThdfgKqU
                 const urlParams = new URLSearchParams(new URL(url).search);
                 setTrailerUrl(urlParams.get('v'));
             }).catch(error => console.log(error));
